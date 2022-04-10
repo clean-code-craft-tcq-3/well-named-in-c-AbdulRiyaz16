@@ -27,10 +27,19 @@ void testPairToNumber(
     assert(pairNumber == expectedPairNumber);
 }
 
+void colorCodingManual(int pairNumber)
+{
+	ColorPair colorPair = GetColorFromPairNumber(pairNumber);
+    char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
+    ColorPairToString(&colorPair, colorPairNames);
+    printf("Got pair %s\n", colorPairNames);	
+	
+}
+
 int main() {
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
-
+    colorCodingManual(1);
     testPairToNumber(BLACK, ORANGE, 12);
     testPairToNumber(VIOLET, SLATE, 25);
 
