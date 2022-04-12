@@ -38,7 +38,6 @@ void colorMapperManual()
      }
 }
 
-
 int main() {
     colorMapperManual();
     testNumberToPair(4, WHITE, BROWN);
