@@ -30,6 +30,7 @@ void testPairToNumber(
 void colorMapper()
 {
  	 ColorPair colorPair;
+     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
      for(int pairNumber=0; pairNumber<numberOfMinorColors; pairNumber++)
     {
          colorPair = GetColorFromPairNumber(pairNumber);
