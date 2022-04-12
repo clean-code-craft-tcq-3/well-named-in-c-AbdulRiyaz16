@@ -34,7 +34,7 @@ void colorMapper()
      for(int pairNumber=0; pairNumber<numberOfMinorColors; pairNumber++)
     {
          colorPair = GetColorFromPairNumber(pairNumber);
-         ColorPairToString(&colorPair, colorPairNames);
+         
     }
 }
 
