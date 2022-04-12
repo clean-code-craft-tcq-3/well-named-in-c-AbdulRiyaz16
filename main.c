@@ -29,7 +29,13 @@ void testPairToNumber(
 
 void colorMapper()
 {
- 	
+ 	char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
+    for(int pairNumber=0; pairNumber<25; pairNumber++)
+    {
+    	ColorPair colorPair = GetColorFromPairNumber(pairNumber);
+    	ColorPairToString(&colorPair, colorPairNames);
+    	printf("Got pair %s\n", colorPairNames);	
+    }
 }
 
 int main() {
