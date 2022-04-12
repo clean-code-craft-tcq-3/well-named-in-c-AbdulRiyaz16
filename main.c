@@ -33,8 +33,7 @@ void colorMapperManual()
      for(int pairNumber=1; pairNumber<26; pairNumber++)
      {
          colorPair = GetColorFromPairNumber(pairNumber);
-         printf("pairNumber:%d-----> majorColor: %s-----> minorColor: %s\n", pairNumber,MajorColorNames[colorPair.majorColor],MajorColorNames[colorPair.minorColor]);
-        
+         printf(KBLU"PairNumber:"KNRM"%d----->"KRED"MajorColor:"KNRM "%s""----->"KYEL"MinorColor:"KNRM"%s\n", pairNumber,MajorColorNames[colorPair.majorColor],MinorColorNames[colorPair.minorColor]);
      }
 }
 
