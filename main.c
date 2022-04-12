@@ -29,7 +29,11 @@ void testPairToNumber(
 
 void colorMapper()
 {
- 	
+ 	 ColorPair colorPair;
+     for(int pairNumber=0; pairNumber<numberOfMinorColors; pairNumber++)
+    {
+         colorPair = GetColorFromPairNumber(pairNumber);
+    }
 }
 
 int main() {
