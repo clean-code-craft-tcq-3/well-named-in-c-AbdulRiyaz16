@@ -27,18 +27,20 @@ void testPairToNumber(
     assert(pairNumber == expectedPairNumber);
 }
 
-void colorMapper()
+void colorMapperManual()
 {
  	 ColorPair colorPair;
-     for(int pairNumber=0; pairNumber<numberOfMinorColors; pairNumber++)
+     for(int pairNumber=1; pairNumber<26; pairNumber++)
      {
          colorPair = GetColorFromPairNumber(pairNumber);
-         printf("Got pair %s\n", colorPair.majorColor);
+         printf("pairNumber:%d-----> majorColor: %s-----> minorColor: %s\n", pairNumber,MajorColorNames[colorPair.majorColor],MajorColorNames[colorPair.minorColor]);
+        
      }
 }
 
+
 int main() {
-    colorMapper();
+    colorMapperManual();
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
     testPairToNumber(BLACK, ORANGE, 12);
