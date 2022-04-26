@@ -30,9 +30,9 @@ void colorMapperManual()
 {
      int pairNumber=0; 
      ColorPair colorPair;
-     for(int MajorpairNumber=1; MajorpairNumber<numberOfMajorColors; MajorpairNumber++)
+     for(int MajorpairNumber=0; MajorpairNumber<numberOfMajorColors; MajorpairNumber++)
      {
-        for(int MinorpairNumber=1; MinorpairNumber<numberOfMinorColors; MinorpairNumber++)
+        for(int MinorpairNumber=0; MinorpairNumber<numberOfMinorColors; MinorpairNumber++)
         {
             ++pairNumber;
             colorPair = GetColorFromPairNumber(pairNumber);
