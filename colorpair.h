@@ -7,6 +7,8 @@
 #define COLORCYN  "\x1B[36m"
 #define COLORWHT  "\x1B[37m"
 
+void colorMapperManual(void);
+
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
