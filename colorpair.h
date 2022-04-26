@@ -1,6 +1,3 @@
-#ifndef COLORPAIR_H_GUARD
-#define COLORPAIR_H_GUARD
-
 #define COLORNORMAL  "\x1B[0m"
 #define COLORRED  "\x1B[31m"
 #define COLORGRN  "\x1B[32m"
@@ -51,4 +48,4 @@ int GetPairNumberFromColor(const ColorPair* colorPair) {
             colorPair->minorColor + 1;
 }
 
-#endif
+
