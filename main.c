@@ -30,7 +30,7 @@ void testPairToNumber(
 void colorMapperManual()
 {
  	 ColorPair colorPair;
-     for(int pairNumber=1; pairNumber<26; pairNumber++)
+     for(int pairNumber=1; pairNumber<numberOfMajorColors; pairNumber++)
      {
          colorPair = GetColorFromPairNumber(pairNumber);
          printf(COLORBLU"PairNumber:"COLORNORMAL"%d----->"COLORRED"MajorColor:"COLORNORMAL "%s""----->"COLORYEL"MinorColor:"COLORNORMAL"%s\n", pairNumber,MajorColorNames[colorPair.majorColor],MinorColorNames[colorPair.minorColor]);
