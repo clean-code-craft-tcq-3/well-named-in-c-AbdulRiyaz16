@@ -4,7 +4,7 @@
 
 void colorMapperManual()
 {
- 	int pairNumber=0; 
+ 	  int pairNumber=0; 
     ColorPair colorPair;
      for(int MajorpairNumber=1; MajorpairNumber<numberOfMajorColors; MajorpairNumber++)
      {
