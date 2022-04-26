@@ -2,7 +2,7 @@
 #include "testColorPair.h"
 
 int main() {
-
+    colorMapperManual();
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
     testPairToNumber(BLACK, ORANGE, 12);
