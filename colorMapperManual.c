@@ -8,7 +8,7 @@ void colorMapperManual()
     ColorPair colorPair;
      for(int MajorpairNumber=1; MajorpairNumber<numberOfMajorColors; MajorpairNumber++)
      {
-        for(int MinorpairNumber=1; MinorpairNumber<numberOfMinorColors*; MinorpairNumber++)
+        for(int MinorpairNumber=1; MinorpairNumber<numberOfMinorColors; MinorpairNumber++)
         {
             ++pairNumber;
             colorPair = GetColorFromPairNumber(pairNumber);
