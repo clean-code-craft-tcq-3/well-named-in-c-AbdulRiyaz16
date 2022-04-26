@@ -27,13 +27,24 @@ void testPairToNumber(
     assert(pairNumber == expectedPairNumber);
 }
 
-
+void colorMapperManual()
+{
+     int pairNumber=0; 
+     ColorPair colorPair;
+     for(int MajorpairNumber=1; MajorpairNumber<numberOfMajorColors; MajorpairNumber++)
+     {
+        for(int MinorpairNumber=1; MinorpairNumber<numberOfMinorColors; MinorpairNumber++)
+        {
+            ++pairNumber;
+            colorPair = GetColorFromPairNumber(pairNumber);
+            printf(COLORBLU"PairNumber:"COLORNORMAL"%d----->"COLORRED"MajorColor:"COLORNORMAL "%s""----->"COLORYEL"MinorColor:"COLORNORMAL"%s\n", pairNumber,MajorColorNames[colorPair.majorColor],MinorColorNames[colorPair.minorColor]);
+        }
+     }
+}
 int main() {
-    
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
     testPairToNumber(BLACK, ORANGE, 12);
     testPairToNumber(VIOLET, SLATE, 25);
-
     return 0;
 }
