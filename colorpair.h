@@ -13,21 +13,22 @@
 #define COLORCYN  "\x1B[36m"
 #define COLORWHT  "\x1B[37m"
 
-typedef struct {
-    enum MajorColor majorColor;
-    enum MinorColor minorColor;
-} ColorPair;
-
-const int MAX_COLORPAIR_NAME_CHARS;
-
-enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
-enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
 extern const char* MajorColorNames[];
 extern const char* MinorColorNames[];
 
 extern int numberOfMajorColors;
 extern int numberOfMinorColors;
+
+const int MAX_COLORPAIR_NAME_CHARS;
+
+enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
+enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
+
+typedef struct {
+    enum MajorColor majorColor;
+    enum MinorColor minorColor;
+} ColorPair;
 
 ColorPair GetColorFromPairNumber(int pairNumber);
 void ColorPairToString(const ColorPair* colorPair, char* buffer);
