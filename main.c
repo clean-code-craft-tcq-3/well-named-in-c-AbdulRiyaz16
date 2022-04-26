@@ -26,7 +26,6 @@ void testPairToNumber(
     printf("Got pair number %d\n", pairNumber);
     assert(pairNumber == expectedPairNumber);
 }
-
 void colorMapperManual()
 {
      int pairNumber=0; 
@@ -42,6 +41,7 @@ void colorMapperManual()
      }
 }
 int main() {
+    colorMapperManual();
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
     testPairToNumber(BLACK, ORANGE, 12);
