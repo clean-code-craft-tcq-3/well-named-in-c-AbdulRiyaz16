@@ -1,4 +1,5 @@
 #include "colorpair.h"
+#include "testColorPair.h"
 
 int main() {
 
