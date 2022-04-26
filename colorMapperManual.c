@@ -1,9 +1,8 @@
 #include "colorMapperManual.h"
 
-
 void colorMapperManual()
 {
- 	int pairNumber=0; 
+ 	  int pairNumber=0; 
     ColorPair colorPair;
      for(int MajorpairNumber=1; MajorpairNumber<numberOfMajorColors; MajorpairNumber++)
      {
@@ -12,6 +11,6 @@ void colorMapperManual()
             ++pairNumber;
             colorPair = GetColorFromPairNumber(pairNumber);
             printf(COLORBLU"PairNumber:"COLORNORMAL"%d----->"COLORRED"MajorColor:"COLORNORMAL "%s""----->"COLORYEL"MinorColor:"COLORNORMAL"%s\n", pairNumber,MajorColorNames[colorPair.majorColor],MinorColorNames[colorPair.minorColor]);
-       }
+        }
      }
 }
