@@ -29,14 +29,15 @@ void testPairToNumber(
 
 void colorMapperManual()
 {
- 	 ColorPair colorPair;
+ 	int pairNumber=0; 
+    ColorPair colorPair;
      for(int MajorpairNumber=1; MajorpairNumber<numberOfMajorColors; MajorpairNumber++)
      {
-        for(int MinorpairNumber=1; MinorpairNumber<numberOfMinorColors; MinorpairNumber++)
+        for(int MinorpairNumber=1; MinorpairNumber<numberOfMinorColors*; MinorpairNumber++)
         {
-
-         colorPair = GetColorFromPairNumber(MinorpairNumber);
-         printf(COLORBLU"PairNumber:"COLORNORMAL"%d----->"COLORRED"MajorColor:"COLORNORMAL "%s""----->"COLORYEL"MinorColor:"COLORNORMAL"%s\n", MinorpairNumber,MajorColorNames[colorPair.majorColor],MinorColorNames[colorPair.minorColor]);
+            ++pairNumber;
+            colorPair = GetColorFromPairNumber(pairNumber);
+            printf(COLORBLU"PairNumber:"COLORNORMAL"%d----->"COLORRED"MajorColor:"COLORNORMAL "%s""----->"COLORYEL"MinorColor:"COLORNORMAL"%s\n", pairNumber,MajorColorNames[colorPair.majorColor],MinorColorNames[colorPair.minorColor]);
        }
      }
 }
